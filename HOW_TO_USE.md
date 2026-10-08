@@ -4,21 +4,21 @@
 
 **English** · [한국어](HOW_TO_USE.ko.md)
 
-Start with one collection on this PC. An Android collection can be managed from the Windows app over MTP; that does not mean the app runs on Android.
+Register a game library on your PC as a Collection, then choose a system and game to browse. To manage a library on an Android device, connect it to your PC and enable file transfer (MTP).
 
 ## What is a Collection?
 
-A Collection registers an existing frontend library: its format, ROM locations, metadata and media. Each open Collection has its own tab. Registration points to your existing folders and scans them; it does not copy all your games into the app.
+A Collection is a game library used by a frontend such as ES-DE and registered in this app. Choose its frontend format and ROM, metadata and media folders; the app scans those folders to display the games. Each open Collection appears as a tab. Registering it keeps the original game files in their existing locations.
 
 Use one Collection per library or device layout, with recognizable names. For example, keep a desktop library and a living-room library as separate Collections. Browse and edit each independently, then compare them when you want to reconcile information. Android storage is accessed by the Windows app through MTP.
 
 ## What is an Archive?
 
-Archive is an optional shared store for selected games, metadata, media and revision history. A Collection describes a library you use; Archive retains content you deliberately collect so it can be reviewed and reused across Collections. Archive is not an automatic backup of every registered library.
+Archive stores games, metadata and media collected from multiple Collections, together with revision history. For example, save information edited in one Collection to Archive, then send it to another Collection. It retains content you explicitly send; it does not automatically back up every Collection.
 
 1. Open **Settings → Archive** and configure its storage format and location.
-2. In a Collection, use the upward-arrow Archive action to send the intended content. Review the scope and any confirmation before proceeding.
-3. Open the **Archive** tab and browse by system or search. Select a game to inspect its details and **Revision** tab.
+2. In the Collection header, click the upward arrow to choose content to send to Archive. Check the selected items and operation details before proceeding.
+3. Open the **Archive** tab, choose a system under SYSTEMS or search for a game in Gamelist. Select the game to view its information and **Revision** history in Detail.
 4. Use **Send to Collection** when you want to reuse archived content in a registered Collection; check the destination and operation options before confirming.
 
 Start without Archive if you only need to browse or edit a library. Add it when you want to retain curated metadata, reconcile several libraries, or reuse selected content. Keep separate backups of files you cannot replace.
@@ -27,7 +27,15 @@ Start without Archive if you only need to browse or edit a library. Add it when 
 
 ![Workspace overview](images/overview-guide.png)
 
-① **Archive tab** opens retained content. ② **Collection tabs** switch registered libraries; **+** adds another. ③ **SYSTEMS** scopes the active view. ④ **Gamelist** lists games with search and sorting. ⑤ **Detail** shows the selected game's metadata, media, ROMs and, for Archive entries, revisions.
+① **Archive tab** — Open content stored in Archive. This tab appears at the far left when Archive is configured; its position is fixed.
+
+② **Collection tabs** — Switch between registered libraries. Use the (+) button to add a Collection, or drag Collection tabs to change their order.
+
+③ **SYSTEMS** — Choose the game system to browse. All games shows every game in the active library; Favorite shows favorites.
+
+④ **Gamelist** — Browse, search and sort games in the selected system. Click a game to display its information in the Detail pane on the right.
+
+⑤ **Detail** — Inspect the selected game's metadata, media and ROMs, and edit its metadata. Archive entries also have a Revision tab for change history.
 
 ## 1. Add your first collection
 
@@ -55,12 +63,12 @@ The **?** beside Frontend Directory explains the expected folder layout. **Brows
 
 | Number | Area | How to use it |
 |---|---|---|
-| ① | Collection tabs and **+** | Switch between registered collections; use **+** to add or reopen a collection. |
-| ② | Systems navigation | Choose a system to scope the game list, **All games** to see the collection, or **Favorite** for favorites. **Add system** and **Add External Storage** are separate actions; they do not add a new collection. |
-| ③ | List controls and search | Switch list/card view, show favorites, prioritize entries with ROMs/metadata/media, and search the current scope. Click column headings to sort. |
-| ④ | Collection action icons | Send metadata to Archive, import metadata, rescan files, or expand collection/storage details. See the icon table below. |
-| ⑤ | Selected-game details | Select a row to inspect it. **Metadata** shows editable fields; **Media** shows associated assets; **ROMs** shows the relevant ROM entries. **Preview** toggles the preview pane. |
-| ⑥ | **Save (Ctrl+S)** | Save edits to the selected game's metadata. Inspect the selected game and fields first; comparing or selecting a row alone does not save edits. |
+| ① | Collection tabs and **+** | Click a tab to open that Collection's game list. Use the **(+) button** to register another Collection or reopen one from History. Drag Collection tabs to change their order. |
+| ② | Systems navigation | Choose the game system to browse. **All games** shows every game in the current Collection; **Favorite** shows favorites. **Add system** adds a system, and **Add External Storage** connects external ROM storage. |
+| ③ | List controls and search | Display games in the selected system as a list or cards. Find games with the search box and click column headings to sort. You can also show favorites only or put games with ROMs, metadata or media first. |
+| ④ | Collection action icons | Send Collection content to Archive or import metadata. Rescan after changing files outside the app; expand the header details to inspect Collection folders and storage information. |
+| ⑤ | Selected-game details | Select a game in Gamelist to view and edit its title, description and other fields under **Metadata**. Open **Media** for images and videos, or **ROMs** for ROM files. **Preview** opens or closes the preview pane. |
+| ⑥ | **Save (Ctrl+S)** | Save changes made to the selected game's title, description and other metadata fields. Click **Save** or press **Ctrl+S** after editing. |
 | ⑦ | Settings gear | Open application settings, including language, appearance, Archive location, copy preferences and other categories. |
 
 | Icon/control | Purpose |
@@ -68,10 +76,10 @@ The **?** beside Frontend Directory explains the expected folder layout. **Brows
 | List / four-square grid | Choose list or card presentation. |
 | ☆ / ★ in the toolbar | Toggle favorites-only display. |
 | Database icon in the list toolbar | Show collection entries missing from Archive; requires an appropriately configured Archive. |
-| **Show all** dropdown | Choose a priority sort (ROM, metadata or media first). It is not a missing-data-only filter. |
-| Upward arrow in the collection header | Send collection content to the configured Archive. It is not a generic frontend export button. |
+| **Show all** dropdown | Put games with ROMs, metadata or media first in the list. |
+| Upward arrow in the collection header | Choose Collection content to send to the configured Archive. |
 | Downward arrow in the collection header | Open the metadata import source chooser. |
-| Circular arrow in the collection header | Rescan the collection/system scope. |
+| Circular arrow in the collection header | Read files again for the current Collection or selected system and refresh the game list. |
 | Down/up chevron in the collection header | Expand/collapse collection details and storage information. |
 | **Scrape** | Open scraping controls. Ordinary-account ScreenScraper access is not yet approved or verified in this preview. |
 
@@ -88,7 +96,7 @@ The left and right headings identify the two sides. Select a comparison row to i
 | Number | Control | Purpose |
 |---|---|---|
 | ① | Comparison dropdown | Show all pairs, differing entries, same entries, one-sided entries, conflicts, or media differences. |
-| ② | *** / ≠ / ≒ / =** quick filters | *****: all; **≠**: differing metadata/one-sided results; **≒**: same metadata but different media; **=**: same comparison entries. "Same" does not prove byte-for-byte ROM equality. |
+| ② | `* / ≠ / ≒ / =` quick filters | `*`: all; **≠**: differing metadata/one-sided results; **≒**: same metadata but different media; **=**: same comparison entries. "Same" does not prove byte-for-byte ROM equality. |
 | ③ | **❮ / ❯** direction buttons | Copy the selected entries toward the indicated side. **❮** uses right → left; **❯** uses left → right. Check the source and destination before confirming. |
 | ④ | Swap / refresh | Swap the comparison sides or rebuild the comparison from their current state. |
 | ⑤ | **Copy ROM files too** | Include ROM files in directional transfers. Leave it off when reconciling metadata/media only. |
@@ -109,9 +117,9 @@ Open the gear (⑦ in the main-screen image), then select **General**.
 | ② | **Language** | Choose your preferred UI language. English is the default for new users. Game titles and descriptions are not automatically translated. |
 | ③ | **Video playback / Autoplay delay** | Choose how preview videos start and the delay before autoplay. The example uses Autoplay and 3 seconds. |
 | ④ | **Sound / Volume / Loop playback** | Control preview audio, its level, and whether videos repeat. These settings concern media previews. |
-| ⑤ | **OK** | Finish saving pending settings changes and close the dialog. Settings are updated through their controls; this button does not save game metadata. |
+| ⑤ | **OK** | Save settings changes and close the dialog. Save game metadata separately using the Detail pane's **Save** button. |
 
-For a quieter first session, turn preview sound off. If the interface feels crowded, use **Appearance** to adjust scale and density. ScreenScraper settings are for the integration under development; do not enter developer credentials copied from another application.
+Turn **Sound** off to mute media previews. Use **Appearance** to adjust interface scale and density. ScreenScraper access using ordinary accounts is still awaiting authorization and validation.
 
 ## Data, updates, and removal
 
