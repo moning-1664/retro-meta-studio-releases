@@ -1,5 +1,7 @@
 # RetroMeta Studio
 
+**README** | [How to Use](HOW_TO_USE.ko.md) | [Release Notes](RELEASE_NOTES.ko.md)
+
 [English](README.md) · **한국어**
 
 게임 컬렉션, 메타데이터와 미디어를 정리하는 무료 Windows 데스크톱 앱입니다.
