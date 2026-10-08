@@ -8,7 +8,7 @@ Capture these views:
 
 1. `01-collection.png`: collection list and one detail panel, with 3–5 demo entries. Shows the main workflow.
 2. `02-compare.png`: two demo collections and their differences. Shows reconciliation.
-3. `03-plan.png`: a pending copy/export Plan, before Apply. Shows review of changes.
+3. No Plan capture is requested: a separate Plan review screen is not available in 0.2.0.
 4. `04-settings.png`: General settings with English selected. Do not include account or developer credential fields.
 5. Optional `05-scraper.png`: only the scraper overview/status using demo content. Label it "Integration under development"; do not imply successful approved scraping.
 
