@@ -1,24 +1,35 @@
 # RetroMeta Studio
 
+**English** · [한국어](README.ko.md)
+
 A free Windows desktop app for organizing game collections, metadata, and media across frontend formats.
 
 **First public preview: 0.2.0 · Windows x64 · English by default**
 
-[Download version 0.2.0](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [How to use](HOW_TO_USE.md) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[Download version 0.2.0](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
-## What you can do
+RetroMeta Studio brings your game libraries into one workspace. Browse games, edit metadata and media associations, and compare frontend collections to reconcile their differences. Adapters support ES-DE, EmulationStation, Pegasus, and LaunchBox; compatibility varies by format and configuration.
 
-- Register and scan collections on storage accessible from Windows.
-- Review and edit game metadata and media associations.
-- Compare collections side by side and inspect metadata differences.
-- Read and write frontend formats through adapters for ES-DE, EmulationStation, Pegasus, and LaunchBox. Compatibility varies by format and configuration; back up existing frontend files first.
-- Configure an optional Archive to retain selected collection data and revision history.
+## Quick Start
 
-## Collection and Archive
+1. Download and extract the entire release ZIP, then run `RetroMetaStudio.exe`. Python is not required.
+2. Click **+** beside the tabs to add a collection. Choose its frontend format and folders.
+3. Choose a system, select a game, and inspect its details. Back up existing files before editing or transferring data.
+4. Configure **Settings → Archive** if you want to retain selected data and revision history.
 
-A **Collection** is a library registered in RetroMeta Studio: its frontend format, ROM locations, metadata and media. You can register several collections and switch between their tabs. Adding a collection points the app to existing locations; it does not duplicate the library.
+![RetroMeta Studio workspace overview](images/overview-guide.png)
 
-An **Archive** is an optional place to collect selected games, metadata and media and keep revision history. It can help preserve and reconcile information from different collections. Choose its location in Settings when you need it; you can browse and edit collections without configuring an Archive. It does not automatically back up every registered collection.
+| Area | Purpose |
+|---|---|
+| ① **Archive tab** | Browse selected games, metadata, media and revision history retained in the optional Archive. It does not automatically back up every collection. |
+| ② **Collection tabs** | Switch between registered libraries. A Collection links a frontend format to its ROM, metadata and media locations; registration does not duplicate the library. |
+| ③ **SYSTEMS** | Choose a system, all games or favorites to narrow the current library view. |
+| ④ **Gamelist** | Browse, search and sort games in the active Archive or Collection. |
+| ⑤ **Detail** | Inspect and edit the selected game's metadata, media and ROM information. Archive entries also offer revision history. |
+
+## How to Use
+
+See [**How to Use**](HOW_TO_USE.md) for collection setup, Archive workflows, comparison controls and application settings.
 
 ## ScreenScraper integration status
 
@@ -34,18 +45,6 @@ Do not post developer credentials, account passwords, or authenticated request U
 4. If the app cannot initialize its web interface, install the [Microsoft Evergreen WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).
 
 Python installation is not required. This preview has no installer or automatic update checker. English is the initial UI language; existing saved preferences take precedence. The UI also supports Korean, Japanese, Spanish, and French. Changing UI language does not translate existing game data.
-
-## Quick start
-
-1. Click **+** beside the collection tabs and choose the frontend format and collection folders.
-2. Select a system and a game to inspect its metadata and media.
-3. Edit the required fields and use **Save (Ctrl+S)**. Back up files before making changes.
-
-[**How to use — numbered screen guide**](HOW_TO_USE.md) covers Add Collection, the main screen, comparison controls and initial settings.
-
-![Collection view with fictional sample content](images/collection-demo.png)
-
-*Edited demo image based on a real 0.2.0 capture; commercial game content has been replaced.*
 
 ## Questions and reports
 
@@ -66,7 +65,3 @@ Free use does not grant a license to the private source code. Third-party compon
 This release is an early preview for evaluation and developer API review. Windows only; no Linux or macOS build is provided. Clean-machine compatibility and all frontend variants have not yet been comprehensively validated.
 
 Planned next steps: approved ScreenScraper integration using each user's own account, GitHub release update notifications, and a Windows installation wizard with safe user-data migration.
-
-## About the images
-
-These are **AI-edited demonstration images based on actual 0.2.0 screenshots**, not unmodified captures. Commercial game artwork and copied descriptions have been replaced with fictional sample content; some backgrounds and icons are also edited. Numbered callouts are documentation overlays and are not application controls. Minor visual details may differ from the running app. These images do not demonstrate approved ScreenScraper access.
