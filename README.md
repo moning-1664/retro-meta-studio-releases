@@ -75,7 +75,7 @@ These are **AI-edited demonstration images based on actual 0.2.0 screenshots**, 
 
 ### Comparing collections
 
-![Two collection windows and the comparison view with fictional sample content](images/compare-demo.png)
+![Single-window comparison view with fictional sample content](images/compare-demo.png)
 
 ### English settings
 
