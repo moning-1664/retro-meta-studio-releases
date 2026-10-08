@@ -1,5 +1,7 @@
 # RetroMeta Studio
 
+**README** | [How to Use](HOW_TO_USE.md) | [Release Notes](RELEASE_NOTES.md)
+
 **English** · [한국어](README.ko.md)
 
 A free Windows desktop app for organizing game collections, metadata, and media across frontend formats.
