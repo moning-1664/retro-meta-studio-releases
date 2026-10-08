@@ -1,6 +1,31 @@
-# How to use RetroMeta Studio
+# How to Use RetroMeta Studio
+
+**English** · [한국어](HOW_TO_USE.ko.md)
 
 Start with one collection on this PC. An Android collection can be managed from the Windows app over MTP; that does not mean the app runs on Android.
+
+## What is a Collection?
+
+A Collection registers an existing frontend library: its format, ROM locations, metadata and media. Each open Collection has its own tab. Registration points to your existing folders and scans them; it does not copy all your games into the app.
+
+Use one Collection per library or device layout, with recognizable names. For example, keep a desktop library and a living-room library as separate Collections. Browse and edit each independently, then compare them when you want to reconcile information. Android storage is accessed by the Windows app through MTP.
+
+## What is an Archive?
+
+Archive is an optional shared store for selected games, metadata, media and revision history. A Collection describes a library you use; Archive retains content you deliberately collect so it can be reviewed and reused across Collections. Archive is not an automatic backup of every registered library.
+
+1. Open **Settings → Archive** and configure its storage format and location.
+2. In a Collection, use the upward-arrow Archive action to send the intended content. Review the scope and any confirmation before proceeding.
+3. Open the **Archive** tab and browse by system or search. Select a game to inspect its details and **Revision** tab.
+4. Use **Send to Collection** when you want to reuse archived content in a registered Collection; check the destination and operation options before confirming.
+
+Start without Archive if you only need to browse or edit a library. Add it when you want to retain curated metadata, reconcile several libraries, or reuse selected content. Keep separate backups of files you cannot replace.
+
+## Workspace at a glance
+
+![Workspace overview](images/overview-guide.png)
+
+① **Archive tab** opens retained content. ② **Collection tabs** switch registered libraries; **+** adds another. ③ **SYSTEMS** scopes the active view. ④ **Gamelist** lists games with search and sorting. ⑤ **Detail** shows the selected game's metadata, media, ROMs and, for Archive entries, revisions.
 
 ## 1. Add your first collection
 
@@ -93,9 +118,5 @@ In this preview, settings and databases are stored in `db`, logs in `logs`, and 
 Back up application databases and any affected collection files before making changes. To update, close the app, extract the new release into a separate folder, and migrate your backed-up application data only when the release notes confirm compatibility. Do not overwrite or remove your only copy of user data. An older app may not be able to open a database migrated by a newer version.
 
 To remove the preview, close it and remove the extracted application folder after preserving any data you need. Check separately configured Archive and collection locations before deleting anything.
-
-## About the images
-
-These are AI-edited guide illustrations based on actual 0.2.0 screenshots. Commercial game artwork and copied descriptions were replaced with fictional sample content; some backgrounds and icons are also edited. The numbered circles are documentation overlays, not application controls. Minor visual details may differ. The images do not demonstrate approved ScreenScraper access.
 
 [Back to the project overview](README.md) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
