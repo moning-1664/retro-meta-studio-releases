@@ -121,6 +121,24 @@ Open the gear (⑦ in the main-screen image), then select **General**.
 
 Turn **Sound** off to mute media previews. Use **Appearance** to adjust interface scale and density. ScreenScraper access using ordinary accounts is still awaiting authorization and validation.
 
+## 5. Other settings
+
+Choose a category on the left of the settings dialog. You do not need to configure every category before starting; change the settings needed for your workflow.
+
+| Category | What it configures | When to use it |
+|---|---|---|
+| **Collections** | Restore open tabs at startup, remember the last system for each Collection, hide empty systems, and set the default ROM/metadata/media priority sort. | Continue your previous session or simplify the SYSTEMS list. |
+| **Game list** | Choose visible columns and their order. Configure DeepL Free/Pro or Google and an API key for description translation. | Put frequently used information first or translate game descriptions. Translation is a separate action; changing the UI language does not translate game data. |
+| **Title tags** | Set language/region labels before or after titles and choose a multidisc numbering format. | Distinguish language variants or discs by title. After configuring the labels, run the language/disc tag action from the game's context menu. |
+| **Scrape** | Manage ScreenScraper account information and usage, ROM hash lookup, and media types to download. | Search for game information and images. In 0.2.0, developer authorization and ordinary-account validation are pending; public account setup instructions will follow. |
+| **Copy policy** | Choose whether Collection-to-Collection copy/paste includes ROM files and media. | Turn ROM copying off to transfer game information only; turn media copying off to omit images and videos. Check **Copy ROM files too** separately when transferring from the comparison screen. |
+| **Archive** | Choose the storage format, metadata folder, ROM folder and media storage arrangement. Initial setup offers creating a store, using an existing one or converting it. | Retain information from several Collections and send it to other libraries. Check folder detection and the selected operation before applying changes to existing content. |
+| **Emulator** | Set the RetroArch executable and Core folder, then choose a default Core per system. Default assignments can also be filled from installed Cores. | Launch games from the app. Install RetroArch and the required Cores on your PC first. |
+| **Appearance** | Choose a theme, list spacing, interface scale (80–130%) and default preview visibility for newly opened Collections. | Adjust small text or crowded rows. You can also change scale with Ctrl+mouse wheel. |
+| **Advanced** | Manage cleanup of undo backups on exit, backup count/size limits, and resetting appearance settings. | Control backup disk usage or restore the default theme, spacing and scale. |
+
+**Advanced backup cleanup** is separate from Archive. With cleanup on exit enabled, completed operations cannot be undone after closing the app. Backups for recovery of interrupted operations are retained. **Reset appearance settings** restores the theme, list spacing and scale.
+
 ## Data, updates, and removal
 
 In this preview, settings and databases are stored in `db`, logs in `logs`, and clipboard handoff files in `clipboard`, beside the executable. ROMs, media, and Archive files may be stored at separately configured locations.
