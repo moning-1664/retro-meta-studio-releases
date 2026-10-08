@@ -10,7 +10,7 @@ A free Windows desktop app for organizing game collections, metadata, and media 
 
 - Register and scan collections on storage accessible from Windows.
 - Review and edit game metadata and media associations.
-- Compare collections and review planned file changes before applying them.
+- Compare collections side by side and inspect metadata differences.
 - Read and write frontend formats through adapters for ES-DE, EmulationStation, Pegasus, and LaunchBox. Compatibility varies by format and configuration; back up existing frontend files first.
 - Configure an optional Archive to retain selected collection data and revision history.
 
@@ -35,7 +35,7 @@ Python installation is not required. This preview has no installer or automatic 
 2. Scan the collection, then review the discovered entries.
 3. Review metadata and media using the list and detail views.
 4. Use Compare when reconciling two collections.
-5. Review the Plan before applying file changes or exporting frontend data.
+5. Back up affected files and review the operation-specific confirmation before making changes. A separate Plan review screen is not available in 0.2.0.
 
 ## Data, updates, and removal
 
@@ -65,4 +65,18 @@ This release is an early preview for evaluation and developer API review. Window
 
 Planned next steps: approved ScreenScraper integration using each user's own account, GitHub release update notifications, and a Windows installation wizard with safe user-data migration.
 
-Screenshots will be added after review using original demonstration content or content whose publication rights have been verified.
+## Interface examples
+
+These are **AI-edited demonstration images based on actual 0.2.0 screenshots**, not unmodified captures. Commercial game artwork and copied descriptions have been replaced with fictional sample content; backgrounds and some icons are also edited. Minor visual details may differ from the running app. These images do not demonstrate approved ScreenScraper access.
+
+### Collection and metadata
+
+![Collection and metadata view with fictional sample content](images/collection-demo.png)
+
+### Comparing collections
+
+![Two collection windows and the comparison view with fictional sample content](images/compare-demo.png)
+
+### English settings
+
+![General settings with an edited neutral background](images/settings-demo.png)
