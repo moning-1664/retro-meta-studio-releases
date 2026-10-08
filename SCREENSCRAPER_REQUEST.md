@@ -30,6 +30,8 @@ Could you please clarify:
 
 If additional authorization is required, please let me know the exact steps and information you need from me. I can provide a demonstration or an updated evaluation build.
 
+I would appreciate a reply via private message.
+
 Thank you,
 moning-1664
 
