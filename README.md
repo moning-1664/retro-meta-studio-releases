@@ -2,9 +2,9 @@
 
 A free Windows desktop app for organizing game collections, metadata, and media across frontend formats.
 
-**First public preview: 0.2.0 · Windows x64 · English by default · Source code is private**
+**First public preview: 0.2.0 · Windows x64 · English by default**
 
-[Download version 0.2.0](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[Download version 0.2.0](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [How to use](HOW_TO_USE.md) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
 ## What you can do
 
@@ -13,6 +13,12 @@ A free Windows desktop app for organizing game collections, metadata, and media 
 - Compare collections side by side and inspect metadata differences.
 - Read and write frontend formats through adapters for ES-DE, EmulationStation, Pegasus, and LaunchBox. Compatibility varies by format and configuration; back up existing frontend files first.
 - Configure an optional Archive to retain selected collection data and revision history.
+
+## Collection and Archive
+
+A **Collection** is a library registered in RetroMeta Studio: its frontend format, ROM locations, metadata and media. You can register several collections and switch between their tabs. Adding a collection points the app to existing locations; it does not duplicate the library.
+
+An **Archive** is an optional place to collect selected games, metadata and media and keep revision history. It can help preserve and reconcile information from different collections. Choose its location in Settings when you need it; you can browse and edit collections without configuring an Archive. It does not automatically back up every registered collection.
 
 ## ScreenScraper integration status
 
@@ -29,21 +35,17 @@ Do not post developer credentials, account passwords, or authenticated request U
 
 Python installation is not required. This preview has no installer or automatic update checker. English is the initial UI language; existing saved preferences take precedence. The UI also supports Korean, Japanese, Spanish, and French. Changing UI language does not translate existing game data.
 
-## First steps
+## Quick start
 
-1. Add a collection and configure its frontend and storage paths.
-2. Scan the collection, then review the discovered entries.
-3. Review metadata and media using the list and detail views.
-4. Use Compare when reconciling two collections.
-5. Back up affected files and review the operation-specific confirmation before making changes. A separate Plan review screen is not available in 0.2.0.
+1. Click **+** beside the collection tabs and choose the frontend format and collection folders.
+2. Select a system and a game to inspect its metadata and media.
+3. Edit the required fields and use **Save (Ctrl+S)**. Back up files before making changes.
 
-## Data, updates, and removal
+[**How to use — numbered screen guide**](HOW_TO_USE.md) covers Add Collection, the main screen, comparison controls and initial settings.
 
-In this preview, settings and databases are stored in `db`, logs in `logs`, and clipboard handoff files in `clipboard`, beside the executable. ROMs, media, and Archive files may be stored at separately configured locations.
+![Collection view with fictional sample content](images/collection-demo.png)
 
-Back up application databases and any affected collection files before making changes. To update, close the app, extract the new release into a separate folder, and migrate your backed-up application data only when the release notes confirm compatibility. Do not overwrite or remove your only copy of user data. An older app may not be able to open a database migrated by a newer version.
-
-To remove the preview, close it and remove the extracted application folder after preserving any data you need. Check separately configured Archive and collection locations before deleting anything.
+*Edited demo image based on a real 0.2.0 capture; commercial game content has been replaced.*
 
 ## Questions and reports
 
@@ -65,18 +67,6 @@ This release is an early preview for evaluation and developer API review. Window
 
 Planned next steps: approved ScreenScraper integration using each user's own account, GitHub release update notifications, and a Windows installation wizard with safe user-data migration.
 
-## Interface examples
+## About the images
 
-These are **AI-edited demonstration images based on actual 0.2.0 screenshots**, not unmodified captures. Commercial game artwork and copied descriptions have been replaced with fictional sample content; backgrounds and some icons are also edited. Minor visual details may differ from the running app. These images do not demonstrate approved ScreenScraper access.
-
-### Collection and metadata
-
-![Collection and metadata view with fictional sample content](images/collection-demo.png)
-
-### Comparing collections
-
-![Single-window comparison view with fictional sample content](images/compare-demo.png)
-
-### English settings
-
-![General settings with an edited neutral background](images/settings-demo.png)
+These are **AI-edited demonstration images based on actual 0.2.0 screenshots**, not unmodified captures. Commercial game artwork and copied descriptions have been replaced with fictional sample content; some backgrounds and icons are also edited. Numbered callouts are documentation overlays and are not application controls. Minor visual details may differ from the running app. These images do not demonstrate approved ScreenScraper access.
