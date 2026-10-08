@@ -1,5 +1,7 @@
 # How to Use RetroMeta Studio
 
+[README](README.md) | **How to Use** | [Release Notes](RELEASE_NOTES.md)
+
 **English** · [한국어](HOW_TO_USE.ko.md)
 
 Start with one collection on this PC. An Android collection can be managed from the Windows app over MTP; that does not mean the app runs on Android.
