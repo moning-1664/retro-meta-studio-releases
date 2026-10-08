@@ -1,5 +1,7 @@
 # RetroMeta Studio 사용 방법
 
+[README](README.ko.md) | **How to Use** | [Release Notes](RELEASE_NOTES.ko.md)
+
 [English](HOW_TO_USE.md) · **한국어**
 
 먼저 PC에 있는 컬렉션 하나로 시작하세요. Android 저장소는 Windows 앱에서 MTP로 접근합니다. Android에서 앱을 실행하는 방식은 아닙니다.
