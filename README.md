@@ -23,8 +23,8 @@ RetroMeta Studio brings your game libraries into one workspace. Browse games, ed
 
 | Area | Purpose |
 |---|---|
-| ① **Archive tab** | Browse selected games, metadata, media and revision history retained in the optional Archive. It does not automatically back up every collection. |
-| ② **Collection tabs** | Switch between registered libraries. A Collection links a frontend format to its ROM, metadata and media locations; registration does not duplicate the library. |
+| ①&nbsp;**Archive&nbsp;tab** | Browse games, metadata, media and revision history saved to the optional Archive. |
+| ②&nbsp;**Collection&nbsp;tabs** | Switch between registered libraries, each linking a frontend format to its ROM, metadata and media folders. |
 | ③ **SYSTEMS** | Choose a system, all games or favorites to narrow the current library view. |
 | ④ **Gamelist** | Browse, search and sort games in the active Archive or Collection. |
 | ⑤ **Detail** | Inspect and edit the selected game's metadata, media and ROM information. Archive entries also offer revision history. |
