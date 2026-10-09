@@ -85,6 +85,19 @@ The **?** beside Frontend Directory explains the expected folder layout. **Brows
 
 For a first session, add one collection, choose a system, select a game, and inspect the detail tabs before changing any files. Configure Archive only if you want to use its features; it is not required for viewing a collection.
 
+### Delete games with the Delete key
+
+The same **Delete (Del)** key acts on different content depending on the active tab. Check the deletion confirmation before proceeding.
+
+| Active tab | Delete key action | Physical files |
+|---|---|---|
+| **Archive** | Removes the selected game's Archive record and list entry. | Keeps ROM/media files and the source Collection's metadata. |
+| **ES-DE Collection** | Deletes the selected game's ROM and metadata. | Removes the ROM file and its metadata entry from the gamelist. |
+
+To delete files physically stored in Archive, use the file deletion action in the context menu. Archive does not delete original files linked from an external Collection.
+
+**From 0.2.7**, refreshing does not automatically re-register deleted Archive entries. Collect them explicitly from their Collection to restore them.
+
 ## 3. Compare two collections
 
 Open both collections. Right-click the first collection tab and set it as the comparison base. Right-click the other tab and choose the comparison action naming that base. You can also compare specific systems through their context menus.
