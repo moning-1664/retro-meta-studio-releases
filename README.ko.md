@@ -8,7 +8,7 @@
 
 **공개 프리뷰: 0.6b · Windows x64 · 기본 UI 언어: 영어**
 
-[0.6b 다운로드](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [질문하기](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[Windows 설치 버전](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Setup.exe) · [포터블 ZIP](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Portable.zip) · [릴리스 안내](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [질문하기](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
 여러 게임 라이브러리를 한 작업 공간에서 탐색하고, 메타데이터와 미디어 연결을 편집하며, 컬렉션 간 차이를 비교할 수 있습니다. ES-DE, EmulationStation, Pegasus, LaunchBox 형식의 어댑터를 지원합니다. 호환 범위는 형식과 설정에 따라 다릅니다.
 
@@ -45,6 +45,10 @@ ScreenScraper 연동은 개발 중이며 개발자 API 승인을 준비하고 �
 2. 설치 프로그램을 실행합니다. 현재 사용자용이며 관리자 권한을 요구하지 않습니다.
 3. Python은 포함되어 있습니다. Microsoft WebView2가 없으면 Microsoft에서 다운로드해 설치하므로 이 경우 인터넷 연결이 필요합니다.
 4. 시작 메뉴에서 RetroMeta Studio를 실행합니다. 바탕화면 바로가기는 선택 사항입니다.
+
+**포터블 버전:** `RetroMetaStudio-0.6b-windows-x64-Portable.zip` 전체를 쓰기 가능한 폴더에 압축 해제하고 `RetroMetaStudio.exe`를 실행합니다. `_internal`은 실행 파일과 함께 두세요. Python은 포함돼 있습니다. WebView2가 없으면 포함된 `MicrosoftEdgeWebview2Setup.exe`를 실행하세요(인터넷 필요). 자세한 안내는 `PORTABLE_README.txt`에 있습니다.
+
+**GitHub의 Code ZIP / Source code ZIP에는 저장소의 설명서가 들어 있습니다. 앱은 위의 설치 버전 또는 포터블 ZIP 링크로 받으세요.**
 
 배포 버전은 **0.6b**, 내부 빌드는 **0.6.0**입니다. 설정 → About에서 GitHub 릴리스를 확인할 수 있습니다. 현재 업데이트는 Setup을 직접 다운로드해 실행해야 하며, 같은 배포 버전 내 빌드 업데이트는 아직 감지하지 못합니다.
 

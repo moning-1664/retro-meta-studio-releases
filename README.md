@@ -8,7 +8,7 @@ A free Windows desktop app for organizing game collections, metadata, and media 
 
 **Public preview: 0.6b · Windows x64 · English by default**
 
-[Download version 0.6b](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[Windows installer](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Setup.exe) · [Portable ZIP](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Portable.zip) · [Release notes](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
 RetroMeta Studio brings your game libraries into one workspace. Browse games, edit metadata and media associations, and compare frontend collections to reconcile their differences. Adapters support ES-DE, EmulationStation, Pegasus, and LaunchBox; compatibility varies by format and configuration.
 
@@ -45,6 +45,10 @@ Do not post developer credentials, account passwords, or authenticated request U
 2. Run Setup. Installation is for the current user and does not request administrator rights.
 3. Python is included. If Microsoft WebView2 Runtime is missing, Setup downloads it from Microsoft; internet access is required in this case.
 4. Launch RetroMeta Studio from the Start menu. A desktop shortcut is optional.
+
+**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, extract the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. If WebView2 is missing, run the included `MicrosoftEdgeWebview2Setup.exe` (internet required). See `PORTABLE_README.txt`.
+
+**GitHub's Code ZIP / Source code ZIP contains repository documents, not the built app. Use the installer or Portable ZIP links above.**
 
 The public version is **0.6b** and the internal build is **0.6.0**. Settings → About checks GitHub releases; updating currently requires downloading and running Setup manually. Same-public-version build updates are not detected yet.
 

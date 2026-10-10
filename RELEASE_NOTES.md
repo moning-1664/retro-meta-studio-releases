@@ -1,6 +1,6 @@
 ## RetroMeta Studio 0.6b · Build 0.6.0
 
-Windows 10/11 x64 preview. Download **RetroMetaStudio-0.6b-windows-x64-Setup.exe**; GitHub source archives are not the application.
+Windows 10/11 x64 preview. Download **RetroMetaStudio-0.6b-windows-x64-Setup.exe** (installer) or **RetroMetaStudio-0.6b-windows-x64-Portable.zip** (extract and run). GitHub source archives are not the application. Both packages use build **0.6.0**. Portable includes a Microsoft WebView2 setup helper for PCs without the Runtime (internet required).
 
 ### 설치 및 주요 변경
 - 현재 사용자용 Windows 설치 프로그램. Python 포함, 관리자 권한 없이 설치.
