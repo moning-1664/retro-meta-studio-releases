@@ -46,7 +46,7 @@ ScreenScraper 연동은 개발 중이며 개발자 API 승인을 준비하고 �
 3. Python은 포함되어 있습니다. Microsoft WebView2가 없으면 Microsoft에서 다운로드해 설치하므로 이 경우 인터넷 연결이 필요합니다.
 4. 시작 메뉴에서 RetroMeta Studio를 실행합니다. 바탕화면 바로가기는 선택 사항입니다.
 
-**포터블 버전:** `RetroMetaStudio-0.6b-windows-x64-Portable.zip` 전체를 쓰기 가능한 폴더에 압축 해제하고 `RetroMetaStudio.exe`를 실행합니다. `_internal`은 실행 파일과 함께 두세요. Python은 포함돼 있습니다. WebView2가 없으면 포함된 `MicrosoftEdgeWebview2Setup.exe`를 실행하세요(인터넷 필요). 자세한 안내는 `PORTABLE_README.txt`에 있습니다.
+**포터블 버전:** `RetroMetaStudio-0.6b-windows-x64-Portable.zip` 을 공식 릴리스에서 받았는지 확인한 뒤, ZIP 우클릭 → 속성 → 차단 해제(표시되는 경우) → 적용 후 전체를 쓰기 가능한 폴더에 압축 해제하고 `RetroMetaStudio.exe`를 실행합니다. `_internal`은 실행 파일과 함께 두세요. Python은 포함돼 있습니다. WebView2가 없으면 포함된 `exe/MicrosoftEdgeWebview2Setup.exe`를 실행하세요(인터넷 필요). 자세한 안내는 `PORTABLE_README.txt`에 있습니다. 나머지 설명서와 이미지는 `doc/`, WebView2 설치 도우미는 `exe/`에 있습니다.
 
 **GitHub의 Code ZIP / Source code ZIP에는 저장소의 설명서가 들어 있습니다. 앱은 위의 설치 버전 또는 포터블 ZIP 링크로 받으세요.**
 

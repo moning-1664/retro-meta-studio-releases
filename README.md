@@ -46,7 +46,7 @@ Do not post developer credentials, account passwords, or authenticated request U
 3. Python is included. If Microsoft WebView2 Runtime is missing, Setup downloads it from Microsoft; internet access is required in this case.
 4. Launch RetroMeta Studio from the Start menu. A desktop shortcut is optional.
 
-**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, extract the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. If WebView2 is missing, run the included `MicrosoftEdgeWebview2Setup.exe` (internet required). See `PORTABLE_README.txt`.
+**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, verify it came from the official release page, right-click the ZIP → Properties → Unblock (if shown) → Apply before extracting the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. If WebView2 is missing, run the included `exe/MicrosoftEdgeWebview2Setup.exe` (internet required). See `PORTABLE_README.txt`. Additional documents and images are in `doc/`; the WebView2 helper is in `exe/`.
 
 **GitHub's Code ZIP / Source code ZIP contains repository documents, not the built app. Use the installer or Portable ZIP links above.**
 
