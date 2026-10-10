@@ -6,15 +6,15 @@
 
 게임 컬렉션, 메타데이터와 미디어를 정리하는 무료 Windows 데스크톱 앱입니다.
 
-**첫 공개 프리뷰: 0.2.0 · Windows x64 · 기본 UI 언어: 영어**
+**공개 프리뷰: 0.6b · Windows x64 · 기본 UI 언어: 영어**
 
-[0.2.0 다운로드](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [질문하기](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[0.6b 다운로드](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [질문하기](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
 여러 게임 라이브러리를 한 작업 공간에서 탐색하고, 메타데이터와 미디어 연결을 편집하며, 컬렉션 간 차이를 비교할 수 있습니다. ES-DE, EmulationStation, Pegasus, LaunchBox 형식의 어댑터를 지원합니다. 호환 범위는 형식과 설정에 따라 다릅니다.
 
 ## Quick Start
 
-1. 배포 ZIP 전체를 압축 해제한 뒤 `RetroMetaStudio.exe`를 실행합니다. Python 설치는 필요하지 않습니다.
+1. `RetroMetaStudio-0.6b-windows-x64-Setup.exe`로 설치한 뒤 시작 메뉴에서 실행합니다. Python 설치는 필요하지 않습니다.
 2. 탭 옆 **+**를 눌러 컬렉션을 추가하고 프런트엔드 형식과 폴더를 선택합니다.
 3. 시스템과 게임을 선택하고 상세 정보를 확인합니다. 편집이나 전송 전에는 기존 파일을 백업하세요.
 4. 선택한 데이터와 변경 이력을 보관하려면 **Settings → Archive**에서 Archive를 설정합니다.
@@ -41,12 +41,16 @@ ScreenScraper 연동은 개발 중이며 개발자 API 승인을 준비하고 �
 
 ## 다운로드와 실행
 
-1. 릴리스 페이지에서 `RetroMetaStudio-0.2.0-windows-x64.zip`을 다운로드합니다. GitHub가 자동 생성하는 소스 압축 파일이 아닙니다.
-2. ZIP **전체**를 사용자 폴더처럼 쓰기 가능한 위치에 압축 해제합니다. 이 프리뷰는 `Program Files`보다 사용자 폴더를 권장합니다.
-3. `RetroMetaStudio.exe`와 `_internal` 폴더를 함께 유지하고 실행합니다.
-4. 웹 인터페이스 초기화에 실패하면 [Microsoft Evergreen WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)을 설치합니다.
+1. 릴리스 페이지에서 `RetroMetaStudio-0.6b-windows-x64-Setup.exe`를 다운로드합니다. GitHub의 소스 압축 파일이 아닙니다.
+2. 설치 프로그램을 실행합니다. 현재 사용자용이며 관리자 권한을 요구하지 않습니다.
+3. Python은 포함되어 있습니다. Microsoft WebView2가 없으면 Microsoft에서 다운로드해 설치하므로 이 경우 인터넷 연결이 필요합니다.
+4. 시작 메뉴에서 RetroMeta Studio를 실행합니다. 바탕화면 바로가기는 선택 사항입니다.
 
-Python은 별도로 설치하지 않아도 됩니다. 설치 위저드와 자동 업데이트 확인 기능은 아직 없습니다. 신규 사용자는 영어 UI로 시작하며 기존에 저장한 언어 설정이 우선 적용됩니다. 한국어·일본어·스페인어·프랑스어 UI도 지원합니다. UI 언어 변경은 기존 게임 데이터를 번역하지 않습니다.
+배포 버전은 **0.6b**, 내부 빌드는 **0.6.0**입니다. 설정 → About에서 GitHub 릴리스를 확인할 수 있습니다. 현재 업데이트는 Setup을 직접 다운로드해 실행해야 하며, 같은 배포 버전 내 빌드 업데이트는 아직 감지하지 못합니다.
+
+같은 설치 폴더에 재설치하면 앱이 생성한 데이터가 유지됩니다. 앱 제거 시에도 사용자 데이터는 남습니다. 업데이트 전 백업하세요. 기존 포터블 앱의 데이터는 해당 폴더에 남으며 설치 시 자동 이전되지 않습니다.
+
+신규 사용자는 영어 UI로 시작하며 저장한 언어 설정이 우선 적용됩니다. 한국어·일본어·스페인어·프랑스어도 지원합니다.
 
 ## 문의와 문제 보고
 
@@ -66,4 +70,4 @@ Python은 별도로 설치하지 않아도 됩니다. 설치 위저드와 자동
 
 평가와 개발자 API 검토를 위한 초기 프리뷰입니다. Windows만 지원하며 Linux·macOS 빌드는 없습니다. 새 PC 환경과 모든 프런트엔드 변형에 대한 검증은 아직 충분히 완료하지 않았습니다.
 
-다음 단계는 승인된 ScreenScraper 연동과 사용자 계정 검증, GitHub 릴리스 업데이트 알림, 사용자 데이터 이전을 고려한 Windows 설치 위저드입니다.
+다음 단계는 승인된 ScreenScraper 연동과 사용자 계정 검증, 내부 빌드 업데이트 감지, 자동 업데이트 설치, 깨끗한 PC에서의 검증입니다.

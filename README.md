@@ -6,15 +6,15 @@
 
 A free Windows desktop app for organizing game collections, metadata, and media across frontend formats.
 
-**First public preview: 0.2.0 · Windows x64 · English by default**
+**Public preview: 0.6b · Windows x64 · English by default**
 
-[Download version 0.2.0](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.2.0) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[Download version 0.6b](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
 RetroMeta Studio brings your game libraries into one workspace. Browse games, edit metadata and media associations, and compare frontend collections to reconcile their differences. Adapters support ES-DE, EmulationStation, Pegasus, and LaunchBox; compatibility varies by format and configuration.
 
 ## Quick Start
 
-1. Download and extract the entire release ZIP, then run `RetroMetaStudio.exe`. Python is not required.
+1. Download and run `RetroMetaStudio-0.6b-windows-x64-Setup.exe`, then launch the app from the Start menu. Python is not required.
 2. Click **+** beside the tabs to add a collection. Choose its frontend format and folders.
 3. Choose a system, select a game, and inspect its details. Back up existing files before editing or transferring data.
 4. Configure **Settings → Archive** if you want to retain selected data and revision history.
@@ -41,12 +41,16 @@ Do not post developer credentials, account passwords, or authenticated request U
 
 ## Download and run
 
-1. Download `RetroMetaStudio-0.2.0-windows-x64.zip` from the release page, rather than GitHub's automatically generated source archives.
-2. Extract the **entire** ZIP into a writable folder, such as a folder under your user profile. Avoid `Program Files` for this preview.
-3. Keep `RetroMetaStudio.exe` and `_internal` together. Run `RetroMetaStudio.exe` from the extracted folder.
-4. If the app cannot initialize its web interface, install the [Microsoft Evergreen WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).
+1. Download `RetroMetaStudio-0.6b-windows-x64-Setup.exe` from the release page, rather than GitHub's source archives.
+2. Run Setup. Installation is for the current user and does not request administrator rights.
+3. Python is included. If Microsoft WebView2 Runtime is missing, Setup downloads it from Microsoft; internet access is required in this case.
+4. Launch RetroMeta Studio from the Start menu. A desktop shortcut is optional.
 
-Python installation is not required. This preview has no installer or automatic update checker. English is the initial UI language; existing saved preferences take precedence. The UI also supports Korean, Japanese, Spanish, and French. Changing UI language does not translate existing game data.
+The public version is **0.6b** and the internal build is **0.6.0**. Settings → About checks GitHub releases; updating currently requires downloading and running Setup manually. Same-public-version build updates are not detected yet.
+
+Reinstalling in the same installation folder preserves app-created data. Uninstall also preserves those data. Back up before updating. Existing portable installations keep their own data; installing does not automatically migrate them.
+
+English is the initial UI language; saved preferences take precedence. Korean, Japanese, Spanish and French are supported.
 
 ## Questions and reports
 
@@ -66,4 +70,4 @@ Free use does not grant a license to the private source code. Third-party compon
 
 This release is an early preview for evaluation and developer API review. Windows only; no Linux or macOS build is provided. Clean-machine compatibility and all frontend variants have not yet been comprehensively validated.
 
-Planned next steps: approved ScreenScraper integration using each user's own account, GitHub release update notifications, and a Windows installation wizard with safe user-data migration.
+Planned next steps: approved ScreenScraper integration, internal-build update detection, automatic installation and clean-PC validation.

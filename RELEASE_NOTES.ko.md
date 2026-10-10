@@ -1,21 +1,31 @@
-# RetroMeta Studio 0.2.0 — 첫 공개 프리뷰
+## RetroMeta Studio 0.6b · Build 0.6.0
 
-[README](README.ko.md) | [How to Use](HOW_TO_USE.ko.md) | **Release Notes**
+Windows 10/11 x64 preview. Download **RetroMetaStudio-0.6b-windows-x64-Setup.exe**; GitHub source archives are not the application.
 
-[English](RELEASE_NOTES.md) · **한국어**
+### 설치 및 주요 변경
+- 현재 사용자용 Windows 설치 프로그램. Python 포함, 관리자 권한 없이 설치.
+- WebView2가 없으면 Microsoft에서 자동 다운로드·설치합니다. 이 경우 인터넷 연결이 필요합니다.
+- Collection/Archive 대시보드의 반복 로딩과 미디어 집계를 개선했습니다.
+- 미아 미디어 정리, 중복 ROM 정보 합치기, 붙여넣기 후 선택과 포커스를 개선했습니다.
+- 우클릭 메뉴와 ROM 복사 옵션, 진행률·남은 시간 표시를 정리했습니다.
+- 기능·설치·백업·무료 사용과 책임 안내 및 외부 구성요소 고지를 포함합니다.
 
-평가와 ScreenScraper 개발자 API 검토를 위한 무료 Windows x64 프리뷰입니다.
+### 업데이트와 데이터
+설정 → About에서 새 공개 버전을 확인할 수 있습니다. **자동 다운로드·설치는 아직 없습니다.** 업데이트 시 앱을 종료하고 새 Setup을 같은 설치 폴더에 실행하세요. 앱이 생성한 데이터는 재설치와 제거 시 유지합니다. 기존 포터블 데이터는 자동 이전되지 않습니다. 파일 변경 전 백업하세요.
 
-- 폴더 방식 배포: ZIP 전체를 압축 해제하고 실행 파일과 `_internal`을 함께 유지합니다.
-- 신규 기본 UI 언어는 영어이며 기존 언어 설정은 유지합니다.
-- 컬렉션 관리, 메타데이터·미디어 편집과 좌우 비교를 제공합니다. 별도 Plan 검토 화면은 없습니다.
-- 설치 위저드와 자동 업데이트 확인 기능은 아직 없습니다.
-- ScreenScraper 개발자 승인을 준비 중이며 일반 계정 스크래핑은 아직 승인·검증 전입니다.
+같은 공개 버전 내 내부 빌드 갱신은 아직 업데이트 확인에 반영되지 않습니다. 내부 빌드는 마지막 숫자만 증가하며 이번 빌드는 `0.6.0`입니다.
 
-`RetroMetaStudio-0.2.0-windows-x64.zip`을 다운로드하세요. GitHub의 자동 생성 소스 압축 파일은 공개 문서이며 앱이 아닙니다. 필요하면 `SHA256SUMS.txt`로 ZIP 해시를 확인할 수 있습니다.
+### Installation and changes
+- Per-user Windows installer; Python is bundled and elevation is not requested.
+- Missing WebView2 is downloaded and installed from Microsoft; internet access is required in this case.
+- Improved Collection/Archive dashboard loading and media accounting, unreferenced-media cleanup, duplicate-ROM metadata merging, and selection/focus after paste.
+- Unified context menus, ROM copy controls and progress/ETA displays.
+- Includes feature, installation, backup, existing free-use/responsibility and third-party notices.
 
-코드 서명은 되어 있지 않습니다. Python은 포함되어 있으며 Microsoft WebView2 Runtime은 별도 설치가 필요할 수 있습니다. 쓰기 가능한 폴더를 사용하고 앱 데이터와 컬렉션 파일을 백업하세요. 새 Windows 설치 환경에서 충분한 검증을 완료하지는 않았습니다.
+### Updates and data
+Settings → About checks for new public releases. **Automatic download/installation is not implemented.** Close the app and run new Setup in the same folder to update. Reinstallation and uninstall preserve app-created data. Existing portable data are not migrated automatically. Back up before file operations. Same-public-version internal build updates are not detected yet.
 
-[문의하기](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+### Validation and preview limits
+Local install/reinstall/uninstall and user-data preservation verified. Version/release tests (17), translated UI tests (72), and focused About/scan/ETA checks (3) passed. This installer is unsigned. Clean-Windows and missing-WebView2 download-path validation are pending. Format compatibility and external-service support vary; ScreenScraper authorization and ordinary-account validation remain under review. ROM/BIOS game content is not included.
 
-문서 수정: 미지원 Plan 화면 설명을 제거하고 화면 구성·사용 가이드와 한글 문서를 추가했습니다. 실행 파일은 변경하지 않았습니다.
+Checksum: see **SHA256SUMS.txt**. Third-party license texts are included in the installed application folder. Product names and logos belong to their respective owners; no affiliation is claimed. The project source license and artwork provenance remain under review; this preview does not grant rights to third-party assets.
