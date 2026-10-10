@@ -46,11 +46,11 @@ Do not post developer credentials, account passwords, or authenticated request U
 3. Python is included. If Microsoft WebView2 Runtime is missing, Setup downloads it from Microsoft; internet access is required in this case.
 4. Launch RetroMeta Studio from the Start menu. A desktop shortcut is optional.
 
-**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, verify it came from the official release page, right-click the ZIP → Properties → Unblock (if shown) → Apply before extracting the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. If WebView2 is missing, run the included `exe/MicrosoftEdgeWebview2Setup.exe` (internet required). See `PORTABLE_README.txt`. Additional documents and images are in `doc/`; the WebView2 helper is in `exe/`.
+**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, verify it came from the official release page, right-click the ZIP → Properties → Unblock (if shown) → Apply before extracting the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. The app checks for WebView2 at startup. If it is missing, click **Install** in the setup prompt (internet required). The Microsoft installer displays progress, and the app continues after installation succeeds. You can also run `exe/MicrosoftEdgeWebview2Setup.exe` manually. See `PORTABLE_README.txt`. Additional documents and images are in `doc/`; the WebView2 helper is in `exe/`.
 
 **GitHub's Code ZIP / Source code ZIP contains repository documents, not the built app. Use the installer or Portable ZIP links above.**
 
-The public version is **0.6b** and the internal build is **0.6.0**. Settings → About checks GitHub releases; updating currently requires downloading and running Setup manually. Same-public-version build updates are not detected yet.
+The public version is **0.6b**. The portable package has internal build **0.6.2**; the existing installer has build **0.6.0**. Settings → About checks GitHub releases; updating currently requires downloading and running Setup manually. Same-public-version build updates are not detected yet.
 
 Reinstalling in the same installation folder preserves app-created data. Uninstall also preserves those data. Back up before updating. Existing portable installations keep their own data; installing does not automatically migrate them.
 
