@@ -1,70 +1,76 @@
 # RetroMeta Studio
 
-> **Website & v0.8 Korean manual:** [Open RetroMeta Studio](https://moning-1664.github.io/retro-meta-studio-releases/) · [Manual](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html)
->
-> The downloads and guide below describe v0.6b.
+**One workspace to browse, edit, compare, and transfer your retro game libraries.**
 
-**README** | [How to Use](HOW_TO_USE.md) | [Release Notes](RELEASE_NOTES.md)
+A free Windows desktop app for game metadata, artwork, media, and optional ROM management across **ES-DE · EmulationStation · Pegasus · LaunchBox**.
 
 **English** · [한국어](README.ko.md)
 
-A free Windows desktop app for organizing game collections, metadata, and media across frontend formats.
+[**Website**](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/) · [**Getting started**](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/getting-started.html) · [**User manual**](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html) · [**Downloads**](https://github.com/moning-1664/retro-meta-studio-releases/releases) · [**Q&A**](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
 
-**Public preview: 0.6b · Windows x64 · English by default**
+> **v0.8 is being prepared for release.** The screenshots and feature overview below show the v0.8b development version. **The currently available download is v0.6b**; v0.8 installers have not been published. The illustrated manual is currently in Korean.
 
-[Windows installer](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Setup.exe) · [Portable ZIP](https://github.com/moning-1664/retro-meta-studio-releases/releases/download/v0.6b/RetroMetaStudio-0.6b-windows-x64-Portable.zip) · [Release notes](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b) · [Ask a question](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a)
+[![RetroMeta Studio v0.8b full Arcade workspace: collection tabs, systems, games and selected game details](docs/v0.8/assets/captures/d74c264e43457598.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html)
 
-RetroMeta Studio brings your game libraries into one workspace. Browse games, edit metadata and media associations, and compare frontend collections to reconcile their differences. Adapters support ES-DE, EmulationStation, Pegasus, and LaunchBox; compatibility varies by format and configuration.
+## Your collection, in three views
 
-## Quick Start
+Use **Arcade** to see the game screen, cover, and description together. Switch to **List** to compare fields across many games, or **Card** to browse covers. Search, filters, sorting, and the detail editor stay part of the same workspace.
 
-1. Download and run `RetroMetaStudio-0.6b-windows-x64-Setup.exe`, then launch the app from the Start menu. Python is not required.
-2. Click **+** beside the tabs to add a collection. Choose its frontend format and folders.
-3. Choose a system, select a game, and inspect its details. Back up existing files before editing or transferring data.
-4. Configure **Settings → Archive** if you want to retain selected data and revision history.
-
-![RetroMeta Studio workspace overview](images/overview-guide.png)
-
-| Area | Purpose |
+| List view | Card view |
 |---|---|
-| ①&nbsp;**Archive&nbsp;tab** | Open content stored in Archive. This tab appears at the far left when Archive is configured; its position is fixed. |
-| ②&nbsp;**Collection&nbsp;tabs** | Switch between registered libraries. Use the (+) button to add a Collection, or drag Collection tabs to change their order. |
-| ③&nbsp;**SYSTEMS** | Choose the game system to browse. All games shows every game in the active library; Favorite shows favorites. |
-| ④&nbsp;**Gamelist** | Browse, search and sort games in the selected system. Click a game to display its information in the Detail pane on the right. |
-| ⑤&nbsp;**Detail** | Inspect the selected game's metadata, media and ROMs, and edit its metadata. Archive entries also have a Revision tab for change history. |
+| [![v0.8b List view with game rows and a detail editor](docs/v0.8/assets/captures/b2a64404d25ce1bf.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html#리스트-보기) | [![v0.8b Card view with cover artwork and a detail editor](docs/v0.8/assets/captures/64a4260d523d37a0.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html#카드-보기) |
+| Inspect filenames, titles, ratings, and other columns. | Find games visually by their covers. |
 
-## How to Use
+## What you can do
 
-See [**How to Use**](HOW_TO_USE.md) for collection setup, Archive workflows, comparison controls and application settings.
+| Task | In RetroMeta Studio |
+|---|---|
+| **Open multiple libraries** | Register game-list folders as Collections and switch between tabs. Configure metadata, media, and ROM locations for each format. |
+| **Edit metadata and media** | Update titles, descriptions, ratings, and artwork. Check the destination before saving; inspect the original metadata in the advanced editor. |
+| **Compare and transfer** | Compare two Collections side by side. Choose the direction and whether to include metadata, media, or ROMs; review the applicable conflict and overwrite options. |
+| **Keep a reusable Archive** | Store selected game information and media with revision history. Compare records and choose the preferred revision for a game. |
+| **Scrape and translate descriptions** | Review ScreenScraper candidates before choosing fields and media. Export descriptions as CSV, translate the `translated` column in an external tool, and review the file before applying it. |
+| **Manage storage and connections** | Inspect storage usage and missing data in Dashboard, manage external storage, and connect Android devices through MTP or ADB where the operation is supported. |
+| **Launch and inspect local games** | Configure RetroArch and cores, choose a core for a system or game, and calculate ROM SHA256 values. RetroArch, cores, and ROMs are prepared separately. |
 
-## ScreenScraper integration status
+### Compare before choosing what to bring across
 
-ScreenScraper integration is under development. Developer API authorization is being prepared; this release does **not** claim approval by ScreenScraper or verified access for ordinary user accounts. An ordinary ScreenScraper account alone is not sufficient to configure this preview. Public account-based scraping will be validated after developer authorization.
+[![v0.8b comparison workspace with two game lists, transfer controls, and details on both sides](docs/v0.8/assets/captures/3dfd95d89c69d6f5.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/compare.html)
 
-Do not post developer credentials, account passwords, or authenticated request URLs in public discussions.
+Copy/paste, comparison, Collection import, and Archive reuse serve different purposes. [Choose the transfer method that fits your task](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/choose-transfer.html) and check the destination, direction, and included data before applying changes.
 
-## Download and run
+## Start with a small collection
 
-1. Download `RetroMetaStudio-0.6b-windows-x64-Setup.exe` from the release page, rather than GitHub's source archives.
-2. Run Setup. Installation is for the current user and does not request administrator rights.
-3. Python is included. If Microsoft WebView2 Runtime is missing, Setup downloads it from Microsoft; internet access is required in this case.
-4. Launch RetroMeta Studio from the Start menu. A desktop shortcut is optional.
+1. Open **My game list** from the welcome screen, or use **+** beside the tabs. Choose the game-list folder and its format.
+2. Select a system and a game. Edit the title or description and confirm the save destination.
+3. Open a second Collection when you want to compare or copy data. Enable ROM management only when you intend to manage ROM files too.
 
-**Portable alternative:** Download `RetroMetaStudio-0.6b-windows-x64-Portable.zip`, verify it came from the official release page, right-click the ZIP → Properties → Unblock (if shown) → Apply before extracting the entire archive into a writable folder and run `RetroMetaStudio.exe`. Keep `_internal` beside the executable. Python is included. The app checks for WebView2 at startup. If it is missing, click **Install** in the setup prompt (internet required). The Microsoft installer displays progress, and the app continues after installation succeeds. You can also run `exe/MicrosoftEdgeWebview2Setup.exe` manually. See `PORTABLE_README.txt`. Additional documents and images are in `doc/`; the WebView2 helper is in `exe/`.
+The [illustrated beginner guide](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/getting-started.html) includes a sample download so you can practise opening, searching, editing, saving, and copying without using your own library. The sample contains fictional metadata and media, **no ROMs**.
 
-**GitHub's Code ZIP / Source code ZIP contains repository documents, not the built app. Use the installer or Portable ZIP links above.**
+## Find the right guide
 
-The public version is **0.6b**. The portable package has internal build **0.6.2**; the existing installer has build **0.6.0**. Settings → About checks GitHub releases; updating currently requires downloading and running Setup manually. Same-public-version build updates are not detected yet.
+| Getting started | Editing | Moving information | Maintenance |
+|---|---|---|---|
+| [Open a Collection](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/collections.html) | [Metadata and media](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/editing.html) | [Copy and paste](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/clipboard.html) | [Archive and revisions](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/archive.html) |
+| [Screen layout](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/screens.html) | [Online scraping](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/scrape.html) | [Compare Collections](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/compare.html) | [Files and storage](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/files.html) |
+| [Views and navigation](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html) | [CSV translation with Google Sheets](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/csv.html#google-sheets) | [Import from a Collection](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/import.html) | [Troubleshooting](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/troubleshooting.html) |
 
-Reinstalling in the same installation folder preserves app-created data. Uninstall also preserves those data. Back up before updating. Existing portable installations keep their own data; installing does not automatically migrate them.
+The repository's **About → website** link opens the manual directly. [Browse all manual topics](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html) · [Read the v0.8 development notes](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/release-notes.html).
 
-English is the initial UI language; saved preferences take precedence. Korean, Japanese, Spanish and French are supported.
+## Download and compatibility
+
+- **Available now: [v0.6b for Windows x64](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b).** Use the Setup executable or Portable ZIP attached to that release. GitHub's **Code ZIP / Source code** archives are not the built app.
+- Python is included. The app uses Microsoft WebView2; installing the runtime may require an internet connection.
+- The v0.8 screenshots and new manual describe the development version and can differ from v0.6b. [v0.6b usage guide](HOW_TO_USE.md) · [v0.6b release notes](RELEASE_NOTES.md).
+- Supported game-list formats are ES-DE, EmulationStation, Pegasus, and LaunchBox. Fields and available operations vary by format and storage connection. The app itself runs on Windows.
+- ScreenScraper needs a working service connection and the appropriate account/access. Service limits and available metadata affect results; integration does not imply endorsement.
+- English, Korean, Japanese, Spanish, and French UI languages are available. Comprehensive clean-PC and device validation for the upcoming v0.8 release is still pending.
 
 ## Questions and reports
 
-Use [GitHub Q&A](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a). Include the app version, Windows version, steps to reproduce, and expected versus actual behavior. For troubleshooting, attach relevant portions of `logs/retrometa.log` as a `.log` or `.txt` file.
+Use [GitHub Q&A](https://github.com/moning-1664/retro-meta-studio-releases/discussions/categories/q-a). Include your app version, Windows version, game-list format, connection type, and steps to reproduce the issue. [Troubleshooting and recovery](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/troubleshooting.html) explains how to interpret read failures, external changes, and folder reconnection notices.
 
-Discussions are public. Review logs before uploading: remove passwords, tokens, usernames, personal paths, and sensitive filenames. Automatic diagnostic log sanitization is planned and is not available in this release.
+Before posting screenshots or logs, remove passwords, tokens, and personal paths. Keep backups of your game lists before editing or transferring files.
 
 ## Free use and responsibility
 
@@ -73,9 +79,3 @@ RetroMeta Studio is provided free of charge for lawful use. Users are responsibl
 The software is provided as-is. To the extent permitted by applicable law, no warranty of accuracy, fitness for a particular purpose, or uninterrupted operation is given, and the provider's liability is limited to the extent permitted by law. These terms do not exclude liability for intentional misconduct, gross negligence, or any liability that cannot legally be excluded. Review file operations and maintain backups.
 
 Free use does not grant a license to the private source code. Third-party components remain subject to their own license terms; see the notices included with the download. Product and service names identify compatible formats and integrations and do not imply affiliation, sponsorship, or endorsement.
-
-## Preview limitations and next steps
-
-This release is an early preview for evaluation and developer API review. Windows only; no Linux or macOS build is provided. Clean-machine compatibility and all frontend variants have not yet been comprehensively validated.
-
-Planned next steps: approved ScreenScraper integration, internal-build update detection, automatic installation and clean-PC validation.
