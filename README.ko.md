@@ -1,5 +1,9 @@
 # RetroMeta Studio
 
+> **공식 사이트 · v0.8 사용 설명서:** [사이트 열기](https://moning-1664.github.io/retro-meta-studio-releases/) · [사용 설명서](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html)
+>
+> 아래 다운로드와 안내는 기존 v0.6b 자료입니다.
+
 **README** | [How to Use](HOW_TO_USE.ko.md) | [Release Notes](RELEASE_NOTES.ko.md)
 
 [English](README.md) · **한국어**

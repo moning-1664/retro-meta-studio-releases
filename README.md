@@ -1,5 +1,9 @@
 # RetroMeta Studio
 
+> **Website & v0.8 Korean manual:** [Open RetroMeta Studio](https://moning-1664.github.io/retro-meta-studio-releases/) · [Manual](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html)
+>
+> The downloads and guide below describe v0.6b.
+
 **README** | [How to Use](HOW_TO_USE.md) | [Release Notes](RELEASE_NOTES.md)
 
 **English** · [한국어](README.ko.md)
