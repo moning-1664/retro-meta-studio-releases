@@ -10,6 +10,15 @@
 
 > **v0.8 릴리즈를 준비하고 있습니다.** 아래 화면과 기능 소개는 v0.8b 개발판 기준입니다. **현재 다운로드 가능한 실행 파일은 v0.6b**이며, v0.8 설치 파일은 아직 공개되지 않았습니다.
 
+## 이런 점이 좋습니다
+
+- **여러 형식을 한 앱에서** — ES-DE, EmulationStation, Pegasus, LaunchBox 목록을 같은 화면에서 다룹니다. 탭으로 여러 목록을 동시에 열 수 있습니다.
+- **PC와 Android를 함께** — PC 폴더는 물론 USB로 연결한 Android 기기(MTP·ADB)의 목록도 열어 편집합니다.
+- **빠진 자료 채우기** — 두 목록을 나란히 비교해 설명·커버를 가져오고, 온라인 스크랩으로 정보를 찾아 골라 적용합니다.
+- **보기 편한 화면** — 같은 목록을 아케이드·리스트·카드 보기로 바꿔 가며 작업합니다.
+- **실행 전에 확인** — 저장·전송 같은 파일 작업은 대상과 범위를 확인한 뒤 적용합니다.
+- **무료, Python 설치 불필요**
+
 [![RetroMeta Studio v0.8b 아케이드 전체 화면: 게임목록 탭, 시스템 목록, 게임과 상세 정보](docs/v0.8/assets/captures/d74c264e43457598.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html)
 
 ## 작업에 맞춰 고르는 세 가지 보기
@@ -29,9 +38,9 @@
 | **제목·설명·커버 편집** | 제목·설명·평점과 미디어를 수정합니다. 저장 대상을 확인하고 반영하며, 고급 편집에서 원본 메타데이터도 살펴볼 수 있습니다. |
 | **두 목록 비교와 전송** | 두 컬렉션을 나란히 비교합니다. 전송 방향과 메타데이터·미디어·ROM 포함 범위를 고르고, 해당 작업의 충돌·덮어쓰기 처리 방식을 확인합니다. |
 | **보관소에 모아 재사용** | 선택한 게임 정보와 미디어를 변경 이력과 함께 보관합니다. 같은 게임의 기록을 비교하고 우선 사용할 버전을 고릅니다. |
-| **온라인 스크랩과 설명 번역** | ScreenScraper 후보를 비교해 필요한 정보와 미디어를 고릅니다. 설명을 CSV로 내보내 외부 도구에서 `translated` 열을 번역하고, 가져오기 검토 후 적용합니다. |
+| **온라인 스크랩과 설명 번역** | ScreenScraper에서 찾은 후보를 비교해 필요한 정보와 미디어를 고릅니다. 설명을 CSV 파일로 내보내 번역한 뒤, 내용을 검토하고 가져옵니다. |
 | **저장 공간과 기기 관리** | Dashboard에서 용량과 빈 항목을 확인하고 외부 저장소를 관리합니다. 지원되는 작업 범위에서 Android MTP·ADB 기기를 연결합니다. |
-| **로컬 게임 실행과 파일 확인** | RetroArch·코어를 설정하고 시스템 또는 게임별 코어를 고릅니다. ROM의 SHA256도 확인할 수 있습니다. RetroArch·코어·ROM은 별도로 준비합니다. |
+| **로컬 게임 실행** | RetroArch를 설정해 게임을 실행합니다. RetroArch·코어·ROM은 별도로 준비합니다. |
 
 ### 차이를 보고, 필요한 자료만 고르세요
 
@@ -57,13 +66,22 @@
 
 저장소 오른쪽 **About의 홈페이지 링크**에서도 사용 설명서를 바로 열 수 있습니다. [설명서 전체 목차](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html) · [v0.8 개발 변경 내용](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/release-notes.html)
 
+## 설치
+
+Windows 10/11 64비트용입니다. [릴리즈 페이지](https://github.com/moning-1664/retro-meta-studio-releases/releases)의 **Assets**에서 받으세요.
+
+- **Setup.exe** — 실행해 설치한 뒤 시작 메뉴에서 엽니다. 관리자 권한은 필요하지 않습니다.
+- **Portable.zip** — ZIP의 속성에서 **차단 해제**가 보이면 선택한 뒤, 쓰기 가능한 폴더에 전체를 풀고 `RetroMetaStudio.exe`를 실행합니다.
+
+처음 실행할 때 Microsoft WebView2가 없으면 설치 안내가 나옵니다(인터넷 연결 필요). 업데이트나 재설치 전에는 게임목록을 백업하세요.
+
 ## 다운로드와 지원 범위
 
 - **현재 공개 배포: [Windows x64용 v0.6b](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b).** 해당 릴리즈에 첨부된 Setup 또는 Portable ZIP을 사용하세요. GitHub의 **Code ZIP / Source code**는 실행 파일이 아닙니다.
 - Python은 함께 제공됩니다. Microsoft WebView2를 사용하며, 런타임을 설치할 때 인터넷 연결이 필요할 수 있습니다.
 - 위 v0.8 화면과 새 설명서는 개발판 기준이므로 v0.6b와 다를 수 있습니다. [v0.6b 사용법](HOW_TO_USE.ko.md) · [v0.6b 릴리즈 노트](RELEASE_NOTES.ko.md)
 - 지원하는 게임목록 형식은 ES-DE·EmulationStation·Pegasus·LaunchBox입니다. 편집 가능한 항목과 작업 범위는 형식·저장소 연결 방식에 따라 다릅니다. 앱 자체는 Windows에서 실행합니다.
-- ScreenScraper는 정상적인 서비스 연결과 계정·접근 권한이 필요합니다. 서비스 한도와 제공 자료에 따라 결과가 달라지며, 연동이 공식 제휴를 뜻하지는 않습니다.
+- 온라인 스크랩에는 ScreenScraper 계정이 필요합니다. 서비스 한도와 제공 자료에 따라 결과가 달라지며, 연동이 공식 제휴를 뜻하지는 않습니다.
 - UI 언어는 한국어·영어·일본어·스페인어·프랑스어를 제공합니다. 공개 예정인 v0.8의 전체 새 PC·기기 검증은 진행 중입니다.
 
 ## 질문과 오류 제보

@@ -10,6 +10,15 @@ A free Windows desktop app for game metadata, artwork, media, and optional ROM m
 
 > **v0.8 is being prepared for release.** The screenshots and feature overview below show the v0.8b development version. **The currently available download is v0.6b**; v0.8 installers have not been published. The illustrated manual is currently in Korean.
 
+## Why you'll like it
+
+- **Many formats, one app** — ES-DE, EmulationStation, Pegasus, and LaunchBox game lists in the same workspace, with several lists open in tabs.
+- **PC and Android together** — Open and edit lists on your PC or on a connected Android device (MTP or ADB).
+- **Fill in what's missing** — Compare two lists side by side and bring over descriptions and covers, or search online and pick what to apply.
+- **Comfortable views** — Switch the same list between Arcade, List, and Card views.
+- **Check before you apply** — Review the destination and scope before saving or transferring files.
+- **Free, and no Python needed**
+
 [![RetroMeta Studio v0.8b full Arcade workspace: collection tabs, systems, games and selected game details](docs/v0.8/assets/captures/d74c264e43457598.png)](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/views.html)
 
 ## Your collection, in three views
@@ -29,9 +38,9 @@ Use **Arcade** to see the game screen, cover, and description together. Switch t
 | **Edit metadata and media** | Update titles, descriptions, ratings, and artwork. Check the destination before saving; inspect the original metadata in the advanced editor. |
 | **Compare and transfer** | Compare two Collections side by side. Choose the direction and whether to include metadata, media, or ROMs; review the applicable conflict and overwrite options. |
 | **Keep a reusable Archive** | Store selected game information and media with revision history. Compare records and choose the preferred revision for a game. |
-| **Scrape and translate descriptions** | Review ScreenScraper candidates before choosing fields and media. Export descriptions as CSV, translate the `translated` column in an external tool, and review the file before applying it. |
+| **Scrape and translate descriptions** | Review ScreenScraper candidates before choosing fields and media. Export descriptions as a CSV file, translate them, and review the result before importing. |
 | **Manage storage and connections** | Inspect storage usage and missing data in Dashboard, manage external storage, and connect Android devices through MTP or ADB where the operation is supported. |
-| **Launch and inspect local games** | Configure RetroArch and cores, choose a core for a system or game, and calculate ROM SHA256 values. RetroArch, cores, and ROMs are prepared separately. |
+| **Launch local games** | Set up RetroArch and launch games. RetroArch, cores, and ROMs are prepared separately. |
 
 ### Compare before choosing what to bring across
 
@@ -57,13 +66,22 @@ The [illustrated beginner guide](https://moning-1664.github.io/retro-meta-studio
 
 The repository's **About → website** link opens the manual directly. [Browse all manual topics](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/manual/index.html) · [Read the v0.8 development notes](https://moning-1664.github.io/retro-meta-studio-releases/v0.8/release-notes.html).
 
+## Install
+
+For Windows 10/11 (64-bit). Download from **Assets** on the [releases page](https://github.com/moning-1664/retro-meta-studio-releases/releases).
+
+- **Setup.exe** — Run it to install, then open the app from the Start menu. No administrator rights are required.
+- **Portable.zip** — If **Unblock** appears in the ZIP's Properties, select it, then extract the whole ZIP into a writable folder and run `RetroMetaStudio.exe`.
+
+On first launch, an installer prompt appears if Microsoft WebView2 is missing (an internet connection is required). Back up your game lists before updating or reinstalling.
+
 ## Download and compatibility
 
 - **Available now: [v0.6b for Windows x64](https://github.com/moning-1664/retro-meta-studio-releases/releases/tag/v0.6b).** Use the Setup executable or Portable ZIP attached to that release. GitHub's **Code ZIP / Source code** archives are not the built app.
 - Python is included. The app uses Microsoft WebView2; installing the runtime may require an internet connection.
 - The v0.8 screenshots and new manual describe the development version and can differ from v0.6b. [v0.6b usage guide](HOW_TO_USE.md) · [v0.6b release notes](RELEASE_NOTES.md).
 - Supported game-list formats are ES-DE, EmulationStation, Pegasus, and LaunchBox. Fields and available operations vary by format and storage connection. The app itself runs on Windows.
-- ScreenScraper needs a working service connection and the appropriate account/access. Service limits and available metadata affect results; integration does not imply endorsement.
+- Online scraping requires a ScreenScraper account. Service limits and available metadata affect results; integration does not imply endorsement.
 - English, Korean, Japanese, Spanish, and French UI languages are available. Comprehensive clean-PC and device validation for the upcoming v0.8 release is still pending.
 
 ## Questions and reports
