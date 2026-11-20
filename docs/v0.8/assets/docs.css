@@ -1,5 +1,7 @@
 /* RetroMeta Studio 설명서 — 어두운 남색 바탕 + 샴페인 골드 한 톤. 외부 글꼴·이미지 없음(오프라인 배포용). */
 :root{
+  /* 어두운 색상표를 사용하므로 브라우저의 자동 색상 변환을 막습니다. */
+  color-scheme: only dark;
   --bg:#080B13; --panel:#111827; --panel2:#0D1320; --line:rgba(148,163,184,.14); --line2:rgba(148,163,184,.26);
   --gold:#9BA8FF; --gold-hi:#D3CCFF; --gold-lo:#6A5CF0; --yel:#FFD23F; --yel-grad:linear-gradient(180deg,#FFE766 0%,#FFC61A 55%,#F2AE00 100%); --text-grad:linear-gradient(90deg,#A9D4FF 0%,#B9B2FF 55%,#D2B5FF 100%); --steel:#93B4D8; --steel-lo:#5B7BA3;
   --gold-grad:linear-gradient(135deg,#5E8BFF 0%,#7A6CF5 55%,#A06BF0 100%);
